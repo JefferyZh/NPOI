@@ -163,7 +163,7 @@ namespace NPOI.XWPF.UserModel
          * @return ctTbl object
          */
 
-        internal CT_Tbl GetCTTbl()
+        public CT_Tbl GetCTTbl()
         {
             return ctTbl;
         }
@@ -266,7 +266,7 @@ namespace NPOI.XWPF.UserModel
             }
         }
 
-        private CT_TblPr GetTrPr()
+        public CT_TblPr GetTrPr()
         {
             return (ctTbl.tblPr != null) ? ctTbl.tblPr : ctTbl
                     .AddNewTblPr();
